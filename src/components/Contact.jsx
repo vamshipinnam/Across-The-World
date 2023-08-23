@@ -3,6 +3,12 @@ import {RiCustomerService2Fill} from "react-icons/ri";
 import {MdOutlineTravelExplore} from "react-icons/md";
 
 const Contact = () => {
+    const openWhatsApp = () => {
+        const phoneNumber = "7842500702";
+        const message = "Hello, I need Customised Packages";
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+      };
   return (
     <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16'>
         <div className='lg:col-span-2 flex flex-col justify-evenly'>
@@ -38,7 +44,7 @@ const Contact = () => {
         <div className='border text-center'>
             <p className='pt-2 lg:mt-10'>GET AN ADDITIONAL DISCOUNTS ON VACATIONS</p>
             <p className='py-4'>10% OFF</p>
-            <p className=' bg-gray-800 text-gray-200 py-4 mb-2 lg:w-[300px] lg:ml-6 xl:ml-11 '>BOOK NOW</p>
+            <p className=' bg-gray-800 text-gray-200 py-4 mb-2 lg:w-[300px] lg:ml-6 xl:ml-11 ' onClick={openWhatsApp}>BOOK NOW</p>
         </div>
 
     </div>
