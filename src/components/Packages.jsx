@@ -31,18 +31,18 @@ const Packages = () => {
     //     "DAY 01 : Start from Delhi in the Night Overnight Journey to Haridwar by Semi Sleeper Bus."
     //       ]
     // },
-    {
-      name: "Aadrai Jungle Trek",
-      image: Aadrai,
-      price: 3999,
-      ex: "ex-Hyderabad, Vijayawada",
-      days: "1 Nigth/2 Days",
-      OverView: [
-        "DAY 01 : Start from Hyderbad in the Night Overnight Journey to Pune by Semi Sleeper Bus or Train.",
-        "DAY 02 : Start to the Trek base point by Bus and start trekking after Breakfast.",
-        "Day 03 : Start to Pune and board the Hyderabad the Bus or Train. "
-          ]
-    },
+    // {
+    //   name: "Aadrai Jungle Trek",
+    //   image: Aadrai,
+    //   price: 3999,
+    //   ex: "ex-Hyderabad, Vijayawada",
+    //   days: "1 Nigth/2 Days",
+    //   OverView: [
+    //     "DAY 01 : Start from Hyderbad in the Night Overnight Journey to Pune by Semi Sleeper Bus or Train.",
+    //     "DAY 02 : Start to the Trek base point by Bus and start trekking after Breakfast.",
+    //     "Day 03 : Start to Pune and board the Hyderabad the Bus or Train. "
+    //       ]
+    // },
     {
       name: "Kerala",
       image: Munnar,
@@ -68,28 +68,29 @@ const Packages = () => {
     //     "DAY 01 : Start from Delhi in the Night Overnight Journey to Haridwar by Semi Sleeper Bus."
     //       ]
     // },
+    // {
+    //   name: "Visapur Trek",
+    //   image: Visapur,
+    //   price: 3999,
+    //   days: "2 Night / 3 Days",
+    //   ex: "ex: Hyd, Pune, Mumbai",
+    //   OverView: [
+    //     "1) Start from Hyderbad in the Night Overnight Journey to Pune by Semi Sleeper Bus or Train.",
+    //     "2) Start to the Trek base point by Bus and start trekking after Breakfast and then back to room(Night Stay) .",
+    //     "3) Checkout Room and start for Local Sight Seeing in Lonavala and back to Pune to Board Bus or Train to HYD"
+    //       ]
+    // },
     {
-      name: "Visapur Trek",
-      image: Visapur,
-      price: 3999,
-      days: "2 Night / 3 Days",
-      ex: "ex: Hyd, Pune, Mumbai",
-      OverView: [
-        "1) Start from Hyderbad in the Night Overnight Journey to Pune by Semi Sleeper Bus or Train.",
-        "2) Start to the Trek base point by Bus and start trekking after Breakfast and then back to room(Night Stay) .",
-        "3) Checkout Room and start for Local Sight Seeing in Lonavala and back to Pune to Board Bus or Train to HYD"
-          ]
-    },
-    {
-      name: "Dudh-Sagar & Dandeli",
+      name: "Gokarna & Dandeli",
       image: DudhSagar,
       price: 6999,
       days: "2 Nights / 3 Days",
       ex: "ex: Hyd",
       OverView: [
-        "DAY 01 : Start from Hyderbad in the Night Overnight Journey to Hubli by Semi Sleeper Bus or Train.",
-        "DAY 02 : Start to the DudhSagar by Bus and after Dudhsagar Fall Start to Dandeli(Night Stay).",
-        "Day 03 : Dandeli Activities(River Rafting, Zipline and other activities) after lunch back to Hubli to board to HYD. "
+        "DAY 00 : Start from Hyderbad in the Night Overnight Journey to Hubli by Semi Sleeper Bus or Train.",
+        "Day-01: Morning pickup from Hubli Station and Start to dandeli, Breakfast in dandeli and Water games in Dandeli and night stay at Resort in Dandeli.",
+        "Day-02: Morning 6:00 start, Breakfast on the way and then Start to Vibhuti falls. After lunch start to honnavar boating,Mangroves Kandla walk,Murdeshwar and Night stay at beach resort.",
+        "Day-03: Morning start to Mahabaleshwar temple, After that Gokarna, Next to Om beach, after Lunch Return back to hubli railway station."
           ]
     },
     // {
@@ -139,7 +140,7 @@ const Packages = () => {
               </div>
               <div className="grid gap-2 p-4">
                 <div className="text-xl font-bold">{pkg.name}</div>
-                <div className="text-md font-semibold">${pkg.price}</div>
+                <div className="text-md font-semibold">Rs {pkg.price}/-</div>
                 <div
                   className="text-sm text-primary-color w-fit font-bold hover:underline cursor-pointer"
                   onClick={() => handleClick(pkg)}
@@ -170,7 +171,7 @@ const Packages = () => {
         </div>
         <div className="p-1">
           <div className="text-xl font-bold p-2">{selectedPackage.name}</div>
-          <div className="text-md font-semibold p-2">Price: ${selectedPackage.price}</div>
+          <div className="text-md font-semibold p-2">Price: Rs {selectedPackage.price}/-</div>
           <div className="text-md font-semibold p-2">Duration: {selectedPackage.days}</div>
           <div className="text-md font-semibold p-2">Departure: {selectedPackage.ex}</div>
           <div className="text-md font-semibold p-1">
