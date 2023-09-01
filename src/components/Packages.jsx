@@ -6,6 +6,7 @@ import Kedarnath from "../assets/Kedarnath.jpg";
 import Aadrai from "../assets/Aadrai.jpg";
 import Visapur from "../assets/Visapur.jpg";
 import Munnar from "../assets/munnar.jpeg";
+import Murdeshwar from "../assets/murdeshwar.jpeg";
 import HaveLock from "../assets/havelock.webp";
 import Trek from "../assets/Trek.jpg";
 import DudhSagar from "../assets/dudhsagar.jpg";
@@ -82,8 +83,8 @@ const Packages = () => {
     // },
     {
       name: "Gokarna & Dandeli",
-      image: DudhSagar,
-      price: 6999,
+      image: Murdeshwar,
+      price: 5999,
       days: "2 Nights / 3 Days",
       ex: "ex: Hyd",
       OverView: [
